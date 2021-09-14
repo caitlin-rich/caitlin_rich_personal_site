@@ -8,6 +8,7 @@ import MuiAppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 function AppBar(props) {
   return <MuiAppBar elevation={0} position="static" {...props} />;
@@ -63,6 +64,7 @@ export default class Navbar extends React.Component {
             <AppBar position="fixed">
               <Toolbar className={styles.toolbar}>
                 <div className={styles.left} />
+
                 <Button
                   variant="h6"
                   underline="none"
@@ -74,6 +76,7 @@ export default class Navbar extends React.Component {
                     alt="CAITLIN_RICH"
                   />
                 </Button>
+
                 <Button
                   variant="h6"
                   underline="none"
@@ -82,6 +85,7 @@ export default class Navbar extends React.Component {
                 >
                   {"Resume"}
                 </Button>
+
                 <Button
                   variant="h6"
                   underline="none"
@@ -90,6 +94,7 @@ export default class Navbar extends React.Component {
                 >
                   {"Projects"}
                 </Button>
+
                 <Button
                   variant="h6"
                   underline="none"
@@ -98,14 +103,27 @@ export default class Navbar extends React.Component {
                 >
                   <MailOutlineIcon />
                 </Button>
+              
                 <Button
                   variant="h6"
                   underline="none"
                   color="inherit"
                   className={styles.title}
+                  href="https://www.linkedin.com/in/caitlinrich/"
                 >
                   <LinkedInIcon />
                 </Button>
+
+                <Button
+                  variant="h6"
+                  underline="none"
+                  color="inherit"
+                  className={styles.title}
+                  href="https://github.com/caitlin-rich/"
+                >
+                  <GitHubIcon />
+                </Button>
+              
               </Toolbar>
             </AppBar>
           </div>
