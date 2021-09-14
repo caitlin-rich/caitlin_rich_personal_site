@@ -10,6 +10,7 @@ import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from '@material-ui/icons/GitHub';
 
+
 function AppBar(props) {
   return <MuiAppBar elevation={0} position="static" {...props} />;
 }
@@ -70,6 +71,7 @@ export default class Navbar extends React.Component {
                   underline="none"
                   color="inherit"
                   className={styles.title}
+                  href="/"
                 >
                   <img
                     src="images/name_logo_glitch__white_transparent.png"
@@ -82,6 +84,7 @@ export default class Navbar extends React.Component {
                   underline="none"
                   color="inherit"
                   className={styles.title}
+                  href="/resume"
                 >
                   {"Resume"}
                 </Button>
@@ -91,6 +94,7 @@ export default class Navbar extends React.Component {
                   underline="none"
                   color="inherit"
                   className={styles.title}
+                  href="/projects"
                 >
                   {"Projects"}
                 </Button>
@@ -100,6 +104,7 @@ export default class Navbar extends React.Component {
                   underline="none"
                   color="inherit"
                   className={styles.title}
+                  href="/contact"
                 >
                   <MailOutlineIcon />
                 </Button>
