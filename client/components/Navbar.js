@@ -74,7 +74,7 @@ export default class Navbar extends React.Component {
                   href="/"
                 >
                   <img
-                    src="images/name_logo_glitch__white_transparent.png"
+                    src="images/navbar_logo_initials.png"
                     alt="CAITLIN_RICH"
                   />
                 </Button>
