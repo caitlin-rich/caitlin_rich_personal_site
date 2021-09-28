@@ -13,8 +13,9 @@ export default function Home() {
   return (
     <Box m={-10} mt={63} textAlign="center">
       <Link to="/">
-        <img src="images/personal_site_banner_glitch.png" alt="banner" width="100%"/>
+        <img src="images/personal_site_rainbow_glitch_banner_nologos.png" alt="banner" width="100%"/>
       </Link>
+      <img src="images/technologies_logos.png" alt="banner" width="100%"/>
       <h3>Thank you for your patience while this site is being revonated.</h3>
       <h3>I can be reached at caitlinboagrich@gmail.com.</h3>
       <a href="https://www.linkedin.com/in/caitlinrich/">LinkedIn</a>

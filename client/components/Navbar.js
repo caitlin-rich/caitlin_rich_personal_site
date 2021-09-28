@@ -84,7 +84,7 @@ export default class Navbar extends React.Component {
                   underline="none"
                   color="inherit"
                   className={styles.title}
-                  href="/resume"
+                //  href="/resume"
                 >
                   {"Resume"}
                 </Button>
@@ -94,7 +94,7 @@ export default class Navbar extends React.Component {
                   underline="none"
                   color="inherit"
                   className={styles.title}
-                  href="/projects"
+                 // href="/projects"
                 >
                   {"Projects"}
                 </Button>
@@ -104,7 +104,7 @@ export default class Navbar extends React.Component {
                   underline="none"
                   color="inherit"
                   className={styles.title}
-                  href="/contact"
+                 // href="/contact"
                 >
                   <MailOutlineIcon />
                 </Button>
