@@ -1,13 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 //Imported UI elements:
-import Grid from "@material-ui/core/Grid";
-import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
 import Box from "@material-ui/core/Box";
-import { withStyles } from "@material-ui/core/styles";
-import Container from "@material-ui/core/Container";
-import { palette } from "@material-ui/system";
+
 
 export default function Home() {
   return (

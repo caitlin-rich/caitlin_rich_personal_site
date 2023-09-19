@@ -10,6 +10,7 @@ import Button from "@material-ui/core/Button";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import Tooltip from "@material-ui/core";
 
 function AppBar(props) {
   return <MuiAppBar elevation={0} position="static" {...props} />;
@@ -55,9 +56,14 @@ const styles = theme => ({
   },
 });
 
+
 export default class Navbar extends React.Component {
+
+
   render() {
-    const { classes } = styles;
+
+    const handleClick = () => navigator.clipboard.writeText(window.location)
+
     return (
       <>
         <nav>
@@ -95,26 +101,6 @@ export default class Navbar extends React.Component {
                     underline="none"
                     color="inherit"
                     className={styles.title}
-                    href="/projects"
-                  >
-                    {"Projects"}
-                  </Button>
-
-                  <Button
-                    variant="h6"
-                    underline="none"
-                    color="inherit"
-                    className={styles.title}
-                    href="/contact"
-                  >
-                    <MailOutlineIcon />
-                  </Button>
-
-                  <Button
-                    variant="h6"
-                    underline="none"
-                    color="inherit"
-                    className={styles.title}
                     href="https://www.linkedin.com/in/caitlinrich/"
                   >
                     <LinkedInIcon />
@@ -129,6 +115,22 @@ export default class Navbar extends React.Component {
                   >
                     <GitHubIcon />
                   </Button>
+
+                  <Tooltip title="Click to copy email address">
+                    <Button
+                      variant="h6"
+                      underline="none"
+                      color="inherit"
+                      className={styles.title}
+                      href="/contact"
+                      onClick={handleClick}
+                    >
+                      <MailOutlineIcon />
+                      caitlinboagrich@gmail.com
+                      
+                    </Button>
+                  </Tooltip>
+
                 </Toolbar>
               </AppBar>
             </Grid>
