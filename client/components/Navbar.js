@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
+import { makeStyles, Grid } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
 import Link from "@material-ui/core/Link";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -8,8 +9,7 @@ import MuiAppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import GitHubIcon from '@material-ui/icons/GitHub';
-
+import GitHubIcon from "@material-ui/icons/GitHub";
 
 function AppBar(props) {
   return <MuiAppBar elevation={0} position="static" {...props} />;
@@ -62,75 +62,76 @@ export default class Navbar extends React.Component {
       <>
         <nav>
           <div id="navbar">
-            <AppBar position="fixed">
-              <Toolbar className={styles.toolbar}>
-                <div className={styles.left} />
+            <Grid>
+              <AppBar position="fixed">
+                <Toolbar className={styles.toolbar}>
+                  <div className={styles.left} />
 
-                <Button
-                  variant="h6"
-                  underline="none"
-                  color="inherit"
-                  className={styles.title}
-                  href="/"
-                >
-                  <img
-                    src="images/navbar_logo_initials.png"
-                    alt="CAITLIN_RICH"
-                  />
-                </Button>
+                  <Button
+                    variant="h6"
+                    underline="none"
+                    color="inherit"
+                    className={styles.title}
+                    href="/"
+                  >
+                    <img
+                      src="images/navbar_logo_initials.png"
+                      alt="CAITLIN_RICH"
+                    />
+                  </Button>
 
-                <Button
-                  variant="h6"
-                  underline="none"
-                  color="inherit"
-                  className={styles.title}
-                //  href="/resume"
-                >
-                  {"Resume"}
-                </Button>
+                  <Button
+                    variant="h6"
+                    underline="none"
+                    color="inherit"
+                    className={styles.title}
+                    href="/resume"
+                  >
+                    {"Resume"}
+                  </Button>
 
-                <Button
-                  variant="h6"
-                  underline="none"
-                  color="inherit"
-                  className={styles.title}
-                 // href="/projects"
-                >
-                  {"Projects"}
-                </Button>
+                  <Button
+                    variant="h6"
+                    underline="none"
+                    color="inherit"
+                    className={styles.title}
+                    href="/projects"
+                  >
+                    {"Projects"}
+                  </Button>
 
-                <Button
-                  variant="h6"
-                  underline="none"
-                  color="inherit"
-                  className={styles.title}
-                 // href="/contact"
-                >
-                  <MailOutlineIcon />
-                </Button>
-              
-                <Button
-                  variant="h6"
-                  underline="none"
-                  color="inherit"
-                  className={styles.title}
-                  href="https://www.linkedin.com/in/caitlinrich/"
-                >
-                  <LinkedInIcon />
-                </Button>
+                  <Button
+                    variant="h6"
+                    underline="none"
+                    color="inherit"
+                    className={styles.title}
+                    href="/contact"
+                  >
+                    <MailOutlineIcon />
+                  </Button>
 
-                <Button
-                  variant="h6"
-                  underline="none"
-                  color="inherit"
-                  className={styles.title}
-                  href="https://github.com/caitlin-rich/"
-                >
-                  <GitHubIcon />
-                </Button>
-              
-              </Toolbar>
-            </AppBar>
+                  <Button
+                    variant="h6"
+                    underline="none"
+                    color="inherit"
+                    className={styles.title}
+                    href="https://www.linkedin.com/in/caitlinrich/"
+                  >
+                    <LinkedInIcon />
+                  </Button>
+
+                  <Button
+                    variant="h6"
+                    underline="none"
+                    color="inherit"
+                    className={styles.title}
+                    href="https://github.com/caitlin-rich/"
+                  >
+                    <GitHubIcon />
+                  </Button>
+                </Toolbar>
+              </AppBar>
+            </Grid>
           </div>
         </nav>
       </>
